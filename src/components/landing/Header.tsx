@@ -27,11 +27,10 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-card/95 backdrop-blur-md shadow-lg border-b border-border"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container-section flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
@@ -51,9 +50,8 @@ const Header = () => {
             <button
               key={link.href}
               onClick={() => scrollTo(link.href)}
-              className={`font-body text-sm font-medium transition-colors hover:text-secondary ${
-                scrolled ? "text-foreground" : "text-primary-foreground"
-              }`}
+              className={`font-body text-sm font-medium transition-colors hover:text-secondary ${scrolled ? "text-foreground" : "text-primary-foreground"
+                }`}
             >
               {link.label}
             </button>
@@ -64,9 +62,8 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-4">
           <a
             href="tel:5125550187"
-            className={`flex items-center gap-2 text-sm font-medium transition-colors ${
-              scrolled ? "text-foreground" : "text-primary-foreground"
-            }`}
+            className={`flex items-center gap-2 text-sm font-medium transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"
+              }`}
           >
             <Phone size={16} />
             (512) 555-0187
@@ -99,9 +96,7 @@ const Header = () => {
                 {link.label}
               </button>
             ))}
-            <a href="tel:5125550187" className="flex items-center gap-2 text-foreground py-2">
-              <Phone size={16} /> (512) 555-0187
-            </a>
+
             <button onClick={() => scrollTo("#contact")} className="btn-primary mt-2">
               Get Free Estimate
             </button>

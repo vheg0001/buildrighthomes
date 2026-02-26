@@ -36,7 +36,7 @@ const Portfolio = () => {
                 className="fade-in-up group relative overflow-hidden rounded-lg aspect-[4/3] cursor-pointer"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <img src={p.img} alt={p.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+                <img src={p.img} alt={p.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/70 transition-all duration-300 flex items-end p-6">
                   <div className="translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <h3 className="font-heading font-bold text-primary-foreground text-lg">{p.name}</h3>
